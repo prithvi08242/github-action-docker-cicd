@@ -25,4 +25,4 @@ jobs:
           push: true
           tags: |
             ${{vars.DOCKERHUB_USER}}/pyapp:latest
-            {{ vars.DOCKERHUB_USER }}/pyapp:${{ github.sha }}
+            ${{ vars.DOCKERHUB_USER }}/pyapp:${{ github.sha }}
